@@ -1,0 +1,40 @@
+{
+  "waitlist": [
+    {
+      "id": "ba934b2e-4e7a-4150-9462-63c08d7f787a",
+      "name": "SAMUEL",
+      "email": "samuel@gmail.com",
+      "role": "client",
+      "createdAt": "2025-12-12T14:02:50.649Z"
+    },
+    {
+      "id": "3e744756-38d6-41dd-964a-d8885adcbae0",
+      "name": "david",
+      "email": "david123@gmail.com",
+      "role": "pme",
+      "createdAt": "2025-12-12T16:47:47.368Z"
+    }
+  ],
+  "surveys": [
+    {
+      "id": "221439e2-fb3f-4cf5-8467-6c18bc932251",
+      "persona": "artisan",
+      "frequency": "sometimes",
+      "pain": "price",
+      "intent": "yes",
+      "service": "informatique",
+      "comment": "bien samuel",
+      "createdAt": "2025-12-12T14:03:31.628Z"
+    },
+    {
+      "id": "01c5fa83-6228-4768-bd4b-c8e25fcf245a",
+      "persona": "client",
+      "frequency": "rare",
+      "pain": "time",
+      "intent": "maybe",
+      "service": "plomberie",
+      "comment": "merci pour votre aide andylix",
+      "createdAt": "2025-12-12T16:48:18.369Z"
+    }
+  ]
+}

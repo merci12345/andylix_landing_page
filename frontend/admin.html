@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin — Andylix</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">
+        <div class="logo"></div>
+        <span>Andylix — Admin</span>
+      </div>
+      <nav class="links">
+        <a href="./index.html">Retour site</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <h2>Dashboard</h2>
+    <p class="muted">Entre la clé admin pour charger les données (header sécurisé).</p>
+
+    <form id="keyForm" class="card form" style="max-width:520px;">
+      <div class="field">
+        <label>Clé admin</label>
+        <input name="key" type="password" placeholder="ADMIN_KEY" required />
+      </div>
+      <button class="btn primary" type="submit">Charger</button>
+      <p id="adminMsg" class="muted" style="margin:6px 0 0;"></p>
+    </form>
+
+    <div id="stats" class="grid3" style="margin-top:14px;"></div>
+
+    <div class="grid3" style="margin-top:14px;">
+      <div class="card">
+        <h3>Waitlist</h3>
+        <pre id="waitlistBox" class="muted" style="white-space:pre-wrap;margin:0;"></pre>
+      </div>
+      <div class="card">
+        <h3>Surveys</h3>
+        <pre id="surveysBox" class="muted" style="white-space:pre-wrap;margin:0;"></pre>
+      </div>
+      <div class="card">
+        <h3>Stats</h3>
+        <pre id="statsBox" class="muted" style="white-space:pre-wrap;margin:0;"></pre>
+      </div>
+    </div>
+  </main>
+
+  <script src="./admin.js"></script>
+</body>
+</html>

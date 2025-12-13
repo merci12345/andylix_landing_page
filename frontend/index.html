@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andylix — Landing</title>
+  <meta name="description" content="Andylix connecte artisans et clients : devis, chat, réservation, suivi." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <div class="brand">
+        <div class="logo"></div>
+        <span>Andylix</span>
+      </div>
+
+      <nav class="links" id="navLinks">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#how">Comment ça marche</a>
+        <a href="#survey">Sondage</a>
+        <a href="#contact" class="btn small">Liste d’attente</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu">☰</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="kicker">Plateforme • Ménages • PME • Artisans</p>
+
+        <h1>
+          Connecte instantanément
+          <span class="grad">artisans</span>
+          et
+          <span class="grad2">clients</span>.
+        </h1>
+
+        <p class="lead">
+          Devis rapides, profils vérifiés, messagerie, réservation et suivi en temps réel.
+        </p>
+
+        <div class="hero-cta">
+          <a class="btn primary" href="#contact">Rejoindre la liste d’attente</a>
+          <button class="btn" id="scrollFeatures">Voir les fonctionnalités</button>
+        </div>
+
+        <div class="badges">
+          <span class="badge">✅ Vérifiés</span>
+          <span class="badge">⭐ Avis</span>
+          <span class="badge">🕒 Rapide</span>
+          <span class="badge">🔒 Sécurisé</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="card mock">
+          <div class="mock-top">
+            <strong>Démo — Réservation</strong>
+            <span class="pill">MVP prêt</span>
+          </div>
+
+          <div class="row">
+            <div>
+              <div class="row-title">Service</div>
+              <div class="row-sub">Plomberie (urgence)</div>
+            </div>
+            <span class="row-tag">⏱️ 6 min</span>
+          </div>
+
+          <div class="row">
+            <div>
+              <div class="row-title">Artisan</div>
+              <div class="row-sub">Mamadou D. • 4.8/5</div>
+            </div>
+            <span class="row-tag ok">✅ Vérifié</span>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Devis</span>
+            <span class="chip">Chat</span>
+            <span class="chip">Calendrier</span>
+            <span class="chip">Suivi</span>
+          </div>
+
+          <div class="row">
+            <div>
+              <div class="row-title">Statut</div>
+              <div class="row-sub">Intervention confirmée</div>
+            </div>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <h2>Fonctionnalités</h2>
+      <p class="muted">Une expérience simple pour les clients, et un outil clair pour les professionnels.</p>
+
+      <div class="grid3">
+        <div class="card feature">
+          <div class="icon">🧾</div>
+          <h3>Devis rapides</h3>
+          <p>Décris ton besoin et reçois des réponses sans perdre du temps.</p>
+        </div>
+
+        <div class="card feature">
+          <div class="icon">💬</div>
+          <h3>Messagerie</h3>
+          <p>Discute directement avec l’artisan : tout est centralisé.</p>
+        </div>
+
+        <div class="card feature">
+          <div class="icon">📅</div>
+          <h3>Réservation</h3>
+          <p>Choisis un créneau, confirme, et suis l’intervention en temps réel.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section id="how" class="section">
+      <h2>Comment ça marche</h2>
+      <p class="muted">3 étapes : du besoin à la mission réalisée.</p>
+
+      <div class="grid3">
+        <div class="card step">
+          <div class="num">1</div>
+          <h3>Décris</h3>
+          <p>Service, détails, photos, localisation.</p>
+        </div>
+
+        <div class="card step">
+          <div class="num">2</div>
+          <h3>Choisis</h3>
+          <p>Compare profils, avis, délais, devis.</p>
+        </div>
+
+        <div class="card step">
+          <div class="num">3</div>
+          <h3>Réserve</h3>
+          <p>Confirmation, suivi, puis évaluation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SURVEY -->
+    <section id="survey" class="section">
+      <h2>Sondage rapide (30 secondes)</h2>
+      <p class="muted">Objectif : valider l’intérêt et comprendre les besoins. (Démo locale pour l’instant)</p>
+
+      <form id="surveyForm" class="card form">
+        <div class="field">
+          <label>1) Tu es plutôt :</label>
+          <select name="persona" required>
+            <option value="">— Choisir —</option>
+            <option value="client">Client (ménage)</option>
+            <option value="pme">PME / Entreprise</option>
+            <option value="artisan">Artisan / Prestataire</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>2) À quelle fréquence as-tu besoin d’un artisan ?</label>
+          <select name="frequency" required>
+            <option value="">— Choisir —</option>
+            <option value="rare">Rare (1–2 fois/an)</option>
+            <option value="sometimes">Parfois (tous les 2–3 mois)</option>
+            <option value="often">Souvent (chaque mois)</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>3) Ton plus gros problème aujourd’hui :</label>
+          <select name="pain" required>
+            <option value="">— Choisir —</option>
+            <option value="trust">Confiance / Qualité</option>
+            <option value="time">Perte de temps pour trouver</option>
+            <option value="price">Prix pas clairs</option>
+            <option value="availability">Disponibilité / délais</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>4) Si Andylix existait, tu l’utiliserais ?</label>
+          <div class="radio-row">
+            <label class="radio"><input type="radio" name="intent" value="yes" required> Oui</label>
+            <label class="radio"><input type="radio" name="intent" value="maybe"> Peut-être</label>
+            <label class="radio"><input type="radio" name="intent" value="no"> Non</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>5) Quel service t’intéresse le plus ?</label>
+          <div class="chips-select">
+            <button type="button" class="chip pick" data-value="plomberie">Plomberie</button>
+            <button type="button" class="chip pick" data-value="electricite">Électricité</button>
+            <button type="button" class="chip pick" data-value="clim">Clim / Froid</button>
+            <button type="button" class="chip pick" data-value="informatique">Informatique</button>
+            <button type="button" class="chip pick" data-value="nettoyage">Nettoyage</button>
+            <button type="button" class="chip pick" data-value="menuiserie">Menuiserie</button>
+          </div>
+          <input type="hidden" name="service" id="serviceInput" required />
+          <p class="muted" style="margin:6px 0 0;">Choisis 1 service (clic).</p>
+        </div>
+
+        <div class="field">
+          <label>6) Commentaires (optionnel)</label>
+          <input name="comment" placeholder="Ex: paiement sécurisé, garantie, rapidité..." />
+        </div>
+
+        <button class="btn primary" type="submit">Envoyer le sondage</button>
+        <p id="surveyMsg" class="muted" style="margin:6px 0 0;"></p>
+      </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Liste d’attente</h2>
+      <p class="muted">Pour l’instant, c’est une démo en local. On branchera le backend après.</p>
+
+      <form id="waitlistForm" class="card form">
+        <div class="field">
+          <label>Nom (optionnel)</label>
+          <input name="name" placeholder="Ex: Ludovic" />
+        </div>
+
+        <div class="field">
+          <label>Email *</label>
+          <input name="email" type="email" required placeholder="toi@email.com" />
+        </div>
+
+        <div class="field">
+          <label>Profil</label>
+          <select name="role">
+            <option value="client">Client</option>
+            <option value="artisan">Artisan</option>
+            <option value="pme">PME</option>
+          </select>
+        </div>
+
+        <button class="btn primary" type="submit">S’inscrire</button>
+        <p id="formMsg" class="muted" style="margin:6px 0 0;"></p>
+      </form>
+    </section>
+
+    <footer class="footer muted">
+      © <span id="year"></span> Andylix — Tous droits réservés.
+    </footer>
+
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
