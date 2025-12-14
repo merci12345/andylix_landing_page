@@ -345,3 +345,33 @@ p{margin:0 0 10px}
   }
   .links.open{display:flex}
 }
+
+/* WhatsApp Button */
+.whatsapp-btn{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  background: #25D366;
+  color: #0b2e1a;
+  font-weight: 1000;
+  border: none;
+  box-shadow: 0 14px 30px rgba(37,211,102,.35);
+}
+
+.whatsapp-btn img{
+  width:22px;
+  height:22px;
+}
+
+.whatsapp-btn:hover{
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+}
+
+/* Mobile full width */
+@media (max-width: 700px){
+  .whatsapp-btn{
+    width:100%;
+    justify-content:center;
+  }
+}
